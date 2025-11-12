@@ -3,8 +3,9 @@
 
 
 #This program calculates the total cost of a meal including tax and change due.
-#Define menu items and their prices.
-#for th
+#Defined menu List items and their prices.
+#Add a drink option to the meal.
+#Added a welcome message that includes the customer's name.
 
 menu = {
     "Hamburger": 5.99,
