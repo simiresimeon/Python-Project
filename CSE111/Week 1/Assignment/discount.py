@@ -38,7 +38,7 @@ while quantity != 0:
 
 print(f"Total order {subtotal}")
 discount=0
-if DOW==2 or DOW==3 or DOW==4:
+if DOW==2 or DOW==3:
     if subtotal > 50:
         discount= subtotal * DISCOUNT_RATE
         print(f"Discount {discount:.2f}")
