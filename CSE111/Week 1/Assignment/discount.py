@@ -20,7 +20,6 @@
 #Near the beginning of your program replace the code that asks the user for the subtotal with a loop that repeatedly asks the user for a price and a quantity and computes the subtotal. This loop should repeat until the user enters "0" for the quantity.
 
 
-
 from datetime import datetime 
 DISCOUNT_RATE= 0.1
 TAX_RATE= 0.06
