@@ -23,7 +23,10 @@
 from datetime import datetime 
 DISCOUNT_RATE= 0.1
 TAX_RATE= 0.06
+# Tells us the exact date of the current moment
 today= datetime.now()
+# Returns the day of the week as an integer where
+# Monday is 0 and Sunday is 6.
 DOW= today.weekday()
 quantity= 1
 subtotal= 0
