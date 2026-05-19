@@ -1,3 +1,6 @@
+"""Author: Simire Simeon Obamiegie"""
+"""Course: CSE 111"""
+"""Project Title: Tire Volume """
 # Enhancement:
 # Added 4 tire prices for four different tire sizes.
 # After calculating the volume, the program displays the price.
