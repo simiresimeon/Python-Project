@@ -40,9 +40,9 @@ def lp100k_from_mpg(mpg):
   Parameter mpg: A value in miles per gallon
   Return: The converted value in liters per 100km.
   """
-  lp100k_from_mpg = 235.215 / mpg
+  lp100k = 235.215 / mpg
+  return lp100k
 
-  return
 # Call the main function so that
 # this program will start executing.
 main()
