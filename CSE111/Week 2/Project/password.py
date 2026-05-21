@@ -1,3 +1,9 @@
+"""Author: Simire Simeon Obamiegie"""
+"""Project: Password strength checker"""
+"""Course: CSE111: Programming with Functions"""
+
+
+
 # Constants for character types
 LOWER = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
 UPPER = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
@@ -41,36 +47,36 @@ def word_complexity(word):
     return complexity
 
 def password_strength(password, min_length=10, strong_length=16):
-    """Calculates strength from 0 to 5 based on security requirements."""
-    
-    # 1. Dictionary Check (Case Insensitive)
+    # 1. Dictionary Check
     if word_in_file(password, "wordlist.txt", False):
-        print("'Password is a dictionary word and is not secure.")
+        message = "Password is a dictionary word and is not secure."
+        print(message)
         return 0
         
-    # 2. Top Password Check (Case Sensitive)
+    # 2. Top Password Check
     if word_in_file(password, "toppasswords.txt", True):
-        print("Password is a commonly used password and is not secure.")
+        message = "Password is a commonly used password and is not secure."
+        print(message)
         return 0
 
-    # 3. Length Check: Too Short
+    # 3. Too Short Check
     if len(password) < min_length:
-        print("Password is too short and is not secure.")
+        message = "Password is too short and is not secure."
+        print(message)
         return 1
 
-    # 4. Length Check: Strong (Longer than 15)
+    # 4. Long Password Check
     if len(password) >= strong_length:
-        print("Password is long, length trumps complexity this is a good password.")
+        message = "Password is long, length trumps complexity this is a good password"
+        print(message)
         return 5
 
-    # 5. Complexity Calculation
+    # 5. Complexity Calculation 
     complexity = word_complexity(password)
     strength = 1 + complexity
-    print(f"The strength of the password is {strength}.")
     return strength
 
 def main():
-    """Main program loop."""
     print("--- Password Strength Checker ---")
     while True:
         user_input = input("\nEnter a password to test (or 'q' to quit): ")
@@ -79,7 +85,8 @@ def main():
             break
             
         strength_score = password_strength(user_input)
-        print(f"Strength Rating: {strength_score}")
+        # Reports the numeric strength as shown in your test guide
+        print(f"Strength: {strength_score}")
 
 if __name__ == "__main__":
     main()
