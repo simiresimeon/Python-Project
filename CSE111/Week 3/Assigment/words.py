@@ -1,13 +1,4 @@
 # Copyright 2020, Brigham Young University-Idaho. All rights reserved.
-def main():
-    string1 = 'inconceivable'
-    string2 = 'inconvenient'
-
-    prefixs = prefix(string1, string2)
-    suffixs = suffix(string1, string2)
-
-    print(f" {prefixs}")
-    print(f" {suffixs}")
 
 def prefix(string1, string2):
     """Return the prefix, if any, that appears in both string1 and
@@ -73,4 +64,3 @@ def suffix(string1, string2):
     # Extract a substring from string1 and return it.
     suf = string1[i1+1 : ]
     return suf
-main()
