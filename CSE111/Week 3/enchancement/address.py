@@ -35,7 +35,7 @@ def extract_state(full_address):
 def extract_zipcode(full_address):
     """Extract and return the ZIP code from
     a properly formatted U.S. mailing address.
-    Parameter
+    Parameter2
         full_address: a U.S. mailing address in this format:
             number and street, city, state zipcode
     Return: the ZIP code

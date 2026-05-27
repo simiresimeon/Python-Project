@@ -1,4 +1,0 @@
-   """Verify that the extract_state function works correctly."""
-    assert extract_state("525 S Center St, Rexburg, ID 83460") == "ID"
-    assert extract_state("123 Ocean View Dr, Los Angeles, CA 90001") == "CA"
-    assert extract_state("789 Mountain Way, Denver, CO 80202") == "CO"
